@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run compiled JS",
+      "program": "${workspaceFolder}/out/${fileBasenameNoExtension}.js",
+      "preLaunchTask": "tsc: build",
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ]
+    }
+  ]
+}
